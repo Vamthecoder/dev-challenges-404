@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-header p {
+header {
     text-align: left;
     margin-left: 30px;
     font-weight: bold;
@@ -18,7 +18,6 @@ main {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
     min-width: 300px;
 }
 
@@ -29,13 +28,11 @@ main {
 #about {
     display: grid;
     gap: 20px;
-    justify-items: left;
     text-align: left;
 } 
 
 #about button {
-    max-width: max-content;
-    min-width: min-content;
+    max-width: fit-content;
     background-color: black;
     color: white;
     padding: 15px;
@@ -89,26 +86,16 @@ footer a {
 }
 
 @media (max-width: 450px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-        margin-top: 50px ;
-    }
-   
+
     #scarecrow img {
         width: min(80vw, 18rem);
     }
     
     #about { 
         margin: 20px 20px 20px 40px;
-        text-align: left;
-        max-height: 50%;
     }
 
     footer {
         margin-top: 200px;
     }
 }
-
-
